@@ -7,13 +7,13 @@ func main() {
 
 	fmt.Println("Enter password: ")
 	fmt.Scanln(&answer)
-	if answer == "password" { } else { return }
+	if answer != "password" { return }
 	fmt.Println("Password is incorrect ")
 	fmt.Scanln(&answer)
-	if answer == "incorrect" { } else { return }
+	if answer != "incorrect" { return }
 	fmt.Println("Try again. ")
 	fmt.Scanln(&answer)
-	if answer == "again" { } else { return }
+	if answer != "again" { return }
 	fmt.Println("Please try again later")
 	fmt.Scanln(&answer)
 	return
